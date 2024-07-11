@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -109,7 +111,8 @@
   .social-icons {
     list-style-type: none;
     display: flex;
-    justify-content: center;          
+    justify-content: center;   
+    font-size: 30px;       
   }
   .social-icons li {
     position: relative;
