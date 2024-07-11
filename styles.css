@@ -24,6 +24,10 @@
       background-position: 0% 50%;
     }
   }
+  #profile-image{
+    opacity:0.3;
+    animation: fadeIn 2s forwards;
+  }
   .formbold-mb-5 {
     margin-bottom: 20px;
   }
