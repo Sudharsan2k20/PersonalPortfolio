@@ -13,6 +13,12 @@
     justify-content: center;
   }
 
+  img{
+    border-radius: 50px;
+    position:relative;
+    margin-top: 10px;
+  }
+
   @keyframes gradient {
     0% {
       background-position: 0% 50%;
