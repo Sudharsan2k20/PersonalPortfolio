@@ -147,14 +147,27 @@
     margin-right: 0;        
   }
   .first-header{
+    width:50%;
+    position: relative;
+    margin-top: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    font-family: "Recursive", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "CASL" 0,
+      "CRSV" 0.5,
+      "MONO" 0;
   }
 
   /* iphone container */
   .apple {
+    width:80%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     height: 100vh;
     margin: 0;
@@ -163,33 +176,34 @@
     width: 300px;
     height: 600px;
     background-color: #1c1c1e;
-    border-radius: 50px;
+    border-radius: 57px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
     position: relative;
     overflow: hidden;
 }
 .iphone-screen {
-    width: 282px;
-    height: 582px;
-    /* background-color: #000; */
+    width: 290px;
+    height: 590px;
     border-radius: 45px;
     overflow: hidden;
     position: absolute;
-    top: 5px;
-    left: 9px;
+    top: 0.2px;
+    left: 5px;
+    bottom:2px;
 }
 .photo {
     width: 100%;
     height: 110%;
+    
     object-fit: cover;
-    object-position: 88% 20%;;
+    object-position: 89% 20%;
 }
 .dynamic-island {
     width: 126px;
     height: 37px;
     background-color: #000;
     position: absolute;
-    top: 25px;
+    top: 20px; /* Reduced from 25px to 8px */
     left: 50%;
     transform: translateX(-50%);
     border-radius: 20px;
@@ -222,4 +236,15 @@
     top: 180px;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
+}
+
+/* fonts */
+.peralta-regular {
+  font-family: "Peralta", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.first-header {
+ 
 }
