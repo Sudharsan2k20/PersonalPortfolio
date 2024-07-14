@@ -31,15 +31,12 @@
             position: absolute;
             top: 9px;
             left: 9px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         .photo {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-            object-position: center;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 88% 20%;;
         }
         .dynamic-island {
             width: 126px;
@@ -85,12 +82,9 @@
 <body>
     <div class="iphone-container">
         <div class="iphone-screen">
-            <div class="dynamic-island"></div>
-            <div class="photo">
-                <p>Your image should appear here. If you see this text, check your image path.</p>
-                <img src="./assets/images/profile.jpeg" alt="Your Photo">
-            </div>
+            <img src="./assets/images/profile.jpeg" alt="Your Photo" class="photo">
         </div>
+        <div class="dynamic-island"></div>
         <div class="button power-button"></div>
         <div class="button volume-up"></div>
         <div class="button volume-down"></div>
