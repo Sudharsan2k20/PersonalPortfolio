@@ -30,10 +30,6 @@
       background-position: 0% 50%;
     }
   }
-  #profile-image{
-    opacity:0.3;
-    animation: fadeIn 2s forwards;
-  }
   .formbold-mb-5 {
     margin-bottom: 20px;
   }
@@ -130,10 +126,12 @@
   }
 
   .social-icons {
+    width:20%;
     list-style-type: none;
     display: flex;
-    justify-content: center;   
-    font-size: 30px;       
+    justify-content: left;   
+    font-size: 30px;
+    margin-left: 12%;
   }
   .social-icons li {
     position: relative;
@@ -146,10 +144,13 @@
   .social-icons li:last-child {
     margin-right: 0;        
   }
-  .first-header{
+  .intro{
     width:50%;
     position: relative;
-    margin-top: 60px;
+    top: -40%;
+    margin-top: -25%;
+    margin-left: 40%;
+    padding-bottom: 30px;
     display: flex;
     justify-content: right;
     font-family: "Recursive", sans-serif;
@@ -162,14 +163,13 @@
       "CRSV" 0.5,
       "MONO" 0;
   }
-
   /* iphone container */
   .apple {
-    width:80%;
+    width:30%;
     display: flex;
     justify-content: right;
     align-items: center;
-    height: 100vh;
+    height: 75vh;
     margin: 0;
 }
 .iphone-container {
@@ -238,13 +238,26 @@
     border-bottom-right-radius: 2px;
 }
 
-/* fonts */
-.peralta-regular {
-  font-family: "Peralta", serif;
-  font-weight: 400;
-  font-style: normal;
+.personal-details{
+  width: 50%;
+  justify-content: right;
+  position: relative;
+  margin-top: 20%;
+  margin-left:40%;
 }
 
-.first-header {
- 
+
+@keyframes popup {
+  0% { transform: scale(0.5); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.pop-up {
+  animation: popup 0.5s ease-out;
+  /* animation: forwards; */
+  /* font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  display: inline-block; */
 }
