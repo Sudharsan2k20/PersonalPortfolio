@@ -7,7 +7,7 @@
   }
   body {
     font-family: "Inter", Arial, Helvetica, sans-serif;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d5ab, #6a64f1, #6b7280);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     justify-content: center;
@@ -16,7 +16,8 @@
   img{
     border-radius: 50px;
     position:relative;
-    margin-top: 10px;
+    margin-top: 5px;
+    /* margin-bottom: 50px; */
   }
 
   @keyframes gradient {
@@ -131,7 +132,27 @@
     display: flex;
     justify-content: left;   
     font-size: 30px;
-    margin-left: 12%;
+    margin-left: 7%;
+    
+  }
+  .fa-instagram:hover{
+    transition: transform 0.2s;
+    transform: scale(1.2);
+    color: #E4405F;
+  }
+  .fa-x-twitter:hover{
+    transition: transform 0.2s;
+    transform: scale(1.2);
+  }
+  .fa-github:hover{
+    transition: transform 0.2s;
+    transform: scale(1.2);
+    color: #181717;
+  }
+  .fa-discord:hover{
+    transition: transform 0.2s;
+    transform: scale(1.2);
+    color: #5865F2;
   }
   .social-icons li {
     position: relative;
@@ -148,14 +169,16 @@
     width:50%;
     position: relative;
     top: -40%;
-    margin-top: -25%;
+    margin-top: -35%;
     margin-left: 40%;
     padding-bottom: 30px;
     display: flex;
     justify-content: right;
     font-family: "Recursive", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 700;
+    color: white;
+    /* animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite; */
     font-style: normal;
     font-variation-settings:
       "slnt" 0,
@@ -169,7 +192,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    height: 75vh;
+    height: 100vh;
     margin: 0;
 }
 .iphone-container {
