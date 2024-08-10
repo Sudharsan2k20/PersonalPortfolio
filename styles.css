@@ -165,35 +165,40 @@
   .social-icons li:last-child {
     margin-right: 0;        
   }
-  .intro{
-    width:50%;
-    position: relative;
-    top: -40%;
-    margin-top: -35%;
-    margin-left: 40%;
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: right;
-    font-family: "Recursive", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    color: white;
-    /* animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite; */
-    font-style: normal;
-    font-variation-settings:
-      "slnt" 0,
-      "CASL" 0,
-      "CRSV" 0.5,
-      "MONO" 0;
+
+  @media (min-width: 992px) {
+    .intro{
+      width:50%;
+      position: relative;
+      top: -40%;
+      margin-top: -35%;
+      margin-left: 40%;
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: right;
+      font-family: "Recursive", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      color: white;
+      /* animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite; */
+      font-style: normal;
+      font-variation-settings:
+        "slnt" 0,
+        "CASL" 0,
+        "CRSV" 0.5,
+        "MONO" 0;
+    }
   }
   /* iphone container */
-  .apple {
-    width:30%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  @media (min-width: 992px) {
+    .apple {
+      width:30%;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+  }
 }
 .iphone-container {
     width: 300px;
