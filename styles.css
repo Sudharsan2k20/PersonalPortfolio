@@ -267,13 +267,26 @@
 }
 
 .personal-details{
-  width: 50%;
-  justify-content: right;
+  width: 100%;
+  /* justify-content: right; */
   position: relative;
-  margin-top: 20%;
-  margin-left:40%;
+  margin-top: 27%;
+  margin-left:3%;
 }
 
+.personal-details ul {
+  list-style: none; /* Removes default bullet points */
+  padding: 0; 
+  margin: 0; 
+  display: flex; 
+  gap: 10px; /* Adds space between items */
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+}
+
+.personal-details li {
+  flex: 1; /* Allows items to grow and shrink as needed */
+  min-width: 100px; /* Sets a minimum width for each item */
+}
 
 @keyframes popup {
   0% { transform: scale(0.5); opacity: 0; }
