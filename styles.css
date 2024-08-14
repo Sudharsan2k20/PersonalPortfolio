@@ -285,7 +285,7 @@
 
 .personal-details li {
   flex: 1; /* Allows items to grow and shrink as needed */
-  min-width: 100px; /* Sets a minimum width for each item */
+  min-width: 200px; /* Sets a minimum width for each item */
 }
 
 @keyframes popup {
