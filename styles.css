@@ -118,36 +118,85 @@
     }
   }
   .my-doings{
-     font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: bolder;
-    font-style: normal;
-    font-size: 150%;
-    justify-content: center;
-    width: 60%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-  }
-  .my-doings1{
+    display: flex;
+    flex-direction: row;
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: bolder;
     font-style: normal;
     font-size: 150%;
-    justify-content: center;
     width: 60%;
-    width: 50%;
+    background-color: #ffffff; /* Background color for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow to create a card effect */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    margin: 20px 0; /* Margin around the card */
+    
+  }
+  .info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+ }
+ .memoji{
+  margin-right: 10px; /* Space between the image and the text */
+    
+}
+
+  .my-doings1{
+    display: flex;
+    flex-direction: row;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 150%;
+    width: 60%;
+    background-color: #ffffff; /* Background color for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow to create a card effect */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    margin: 20px 0; /* Margin around the card */
   }
 
   .info1{
     display: flex;
     align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
   }
-  .info{
+  .memoji2{
+    margin-right: 20px;
+  }
+  .my-doings1 > div {
     display: flex;
-     align-items: flex-start; /* Align items at the top */
-     margin-top: 100px;
- }
+    flex-direction: column;
+    justify-content: center;
+}
+.my-doings1 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.my-doings1 li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.my-doings1 li img {
+  margin-right: 10px;
+}
+
+.my-doings1 h4 {
+  margin: 0;
+}
+
+.my-doings1 p {
+  margin: 5px 0 0;
+}
+  
   ul {
     list-style-type: none;
     padding: 0;
@@ -405,14 +454,8 @@
   padding: 2px 16px;
 }
 
-.memoji{
-  width: 50%;
-  animation: bounce 1s infinite;
-  margin-left: auto; /* Align image to the right */
-}
-.memoji2{
 
-}
+
 
 @keyframes bounce {
   0%, 100% {
