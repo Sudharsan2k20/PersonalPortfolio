@@ -126,8 +126,28 @@
     justify-content: center;
     width: 60%;
     margin-left: 5%;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
   }
+  .my-doings1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 150%;
+    justify-content: center;
+    width: 60%;
+    width: 50%;
+  }
+
+  .info1{
+    display: flex;
+    align-items: flex-start;
+  }
+  .info{
+    display: flex;
+     align-items: flex-start; /* Align items at the top */
+     /* margin-top: 100px; */
+ }
   ul {
     list-style-type: none;
     padding: 0;
@@ -390,6 +410,9 @@
   animation: bounce 1s infinite;
   margin-left: auto; /* Align image to the right */
 }
+.memoji2{
+
+}
 
 @keyframes bounce {
   0%, 100% {
@@ -400,8 +423,3 @@
   }
 }
 
-.info{
-   display: flex;
-    align-items: flex-start; /* Align items at the top */
-    margin-top: 150px;
-}
