@@ -7,7 +7,7 @@
   }
   body {
     font-family: "Inter", Arial, Helvetica, sans-serif;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d5ab, #f4f0f0);
+    background: linear-gradient(-45deg,  #f4f0f0);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     justify-content: center;
@@ -337,27 +337,7 @@
     border-bottom-right-radius: 2px;
 }
 
-.personal-details{
-  width: 100%;
-  /* justify-content: right; */
-  position: relative;
-  /* margin-top: 27%; */
-  margin-left:3%;
-}
 
-.personal-details ul {
-  list-style: none; /* Removes default bullet points */
-  padding: 0; 
-  margin: 0; 
-  display: flex; 
-  gap: 10px; /* Adds space between items */
-  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
-}
-
-.personal-details li {
-  flex: 1; /* Allows items to grow and shrink as needed */
-  min-width: 50px; /* Sets a minimum width for each item */
-}
 
 @keyframes popup {
   0% { transform: scale(0.5); opacity: 0; }
