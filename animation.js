@@ -1,18 +1,28 @@
-<script>
-$(document).ready(function(){
-    $(".github-link").hover(
-        function() {
-            // On mouse over
-            $(this).find(".arrow").animate({
-                left: '50%'
-            }, 300);
-        },
-        function() {
-            // On mouse out
-            $(this).find(".arrow").animate({
-                left: '-30px'
-            }, 300);
+$(document).ready(function() {
+
+    // $('.submit').click(function(){
+    //     alert("Hello");
+    // })
+
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+    
+    var elementTop = $(element).offset().top;
+    var elementBottom = elementTop + $(element).outerHeight();
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+}
+
+// Fade in elements on scroll
+$(window).on('scroll', function() {
+    $('.content').each(function() {
+        if (isInViewport(this)) {
+            $(this).css('opacity', '1');
         }
-    );
+    });
 });
-</script>
+
+// Trigger scroll event on page load
+$(window).trigger('scroll');
+});

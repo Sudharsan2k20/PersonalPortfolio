@@ -9,62 +9,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Peralta&family=Recursive:wght@300..1000&display=swap" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="animation.js"></script>
       </head>
-      <style>
-        .contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Spacing between the contact items */
-}
-/* .contact-item{
-  position: relative;
-    overflow: hidden;
-} */
-.arrow {
-    position: absolute;
-    left: -30px; /* Start position off-screen */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Adjust to vertical center */
-    transition: all 0.3s ease;
-}
-.contact-item a {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border: 2px solid #ccc; /* Light gray border color */
-    border-radius: 10px; /* Rounded corners */
-    text-decoration: none; /* Remove underline from links */
-    color: #000; /* Default text color */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-}
-
-.contact-item img {
-    width: 24px; /* Icon size */
-    height: 24px;
-    margin-right: 8px; /* Space between the icon and text */
-}
-
-.contact-item .icon {
-    font-size: 24px; /* Arrow icon size */
-    margin-right: 8px; /* Space between the icon and text */
-}
-
-.contact-item span {
-    font-size: 16px; /* Text size */
-    color: #000; /* Text color */
-}
-
-.contact-item a:hover {
-    border-color: #000; /* Border color on hover */
-    background-color: #f5f5f5; /* Background color on hover */
-    transform: scale(1.05); /* Slightly increase size on hover */
-}
-
-      </style>
 
     <body >
       <div class="d-flex flex-column justify-content-center w-100 h-100">
@@ -72,7 +20,7 @@
           <div class="d-flex flex-column justify-content-center align-items-center">
                   <div>
                     
-                    <div class="apple pop-up slide-fade-in">
+                    <div class="apple pop-up slide-fade-in content">
                         <div class="iphone-container">
                             <div class="iphone-screen">
                                 <img src="./assets/images/profile.jpeg" alt="Your Photo" class="photo">
@@ -86,7 +34,7 @@
                     
                     
                   
-                      <div class="pop-up slide-fade-in">
+                      <div class="pop-up slide-fade-in content">
                           <div class="first-header col-lg-12 ">
                             <h1 class="intro">Hey there! It's Sudarsan here. I'm a 21 year old Software Developer, I do create website and play with them until I get bored.</h1> 
                           </div>
@@ -94,9 +42,9 @@
       
       
                       
-                  <div class="info">
+                  <div class="info content">
                       
-                      <div class="my-doings">
+                      <div class="my-doings submit">
                         <div class="memoji">
                           <h1>About me</h1>
                           <img src="./assets/images/Apple Memoji 2.jpeg" alt="dev icon" width="300">
@@ -117,7 +65,7 @@
                       
                   </div>
                   
-                      <div class="info1">
+                      <div class="info1 content">
                         <div class="my-doings1">
                           <div class="memoji2">
                             <img src="./assets/images/Apple Memoji 1.jpeg" alt="dev icon" width="300">
@@ -162,24 +110,27 @@
                       </div>
                   
       
-                  
+                      <div class="info content">
+                      
+                        <div class="my-doings3 submit">
+                            
+                          <h1>Experience</h1>
+                          <ul>
+                            <li>
+                                <h4>Junior Software Developer</h4>
+                                <p>APA Engineering PVT LTD</p>
+                                <p>September 2023 - July-2024</p>
+                            </li>
+                            
+                            
+                            
+                        </ul> 
+                            
+                        </div>
+                        
+                    </div>
       
-                  <div class="exp-details">
-                      <img src="">
-                      <h1>Experience</h1>
-                      <ul>
-                          <li>
-                              <h4>Junior Software Developer</h4>
-                              <p>APA Engineering PVT LTD</p>
-                              <p>September 2023 - July-2024</p>
-                          </li>
-                          
-                          
-                          
-                      </ul> 
-                  </div>
-      
-                  <div class="">
+                  <div class="content">
                       
                       <h1>Projects</h1>
                       <ul>
@@ -213,21 +164,22 @@
 
                 
 
-                <div class="contact-section">
+                <div class="contact-section content">
+                    <p>Contact</p>
                   <div class="contact-item">
                       <a href="https://x.com/sudhageeksout" target="_blank">
-                        <img src="assets/images/x.svg" alt="GitHub Icon">@sudhageeksout
+                        <i class="fa-brands fa-x-twitter" style="font-size: 20px;"></i>@sudhageeksout
                         <span class="arrow">→</span>
                       </a>
                   </div>
                   <div class="contact-item">
                       <a href="https://github.com/Sudharsan2k20" target="_blank">
-                        <img src="assets/images/gh.png" alt="GitHub Icon">@Sudharsan2k20
+                        <i class="fa-brands fa-github" style="font-size: 20px;"></i>@Sudharsan2k20
                       </a>
                   </div>
                   <div class="contact-item">
                       <a href="mailto:sudharsanm204@gmail.com">
-                          <img src="assets/images/mail.svg" alt="Email Icon">sudharsanm204@gmail.com
+                        <i class="fa-regular fa-envelope" style="font-size: 20px;"></i>sudharsanm204@gmail.com
                       </a>
                   </div>
                   <div class="contact-item">
@@ -244,6 +196,5 @@
       
 
     </div>
-      
     </body>
 </html>
