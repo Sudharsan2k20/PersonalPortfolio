@@ -1,10 +1,6 @@
 $(document).ready(function() {
 
-    // $('.submit').click(function(){
-    //     alert("Hello");
-    // })
-
-// Function to check if an element is in the viewport
+    
 function isInViewport(element) {
     
     var elementTop = $(element).offset().top;
@@ -14,7 +10,7 @@ function isInViewport(element) {
     return elementBottom > viewportTop && elementTop < viewportBottom;
 }
 
-// Fade in elements on scroll
+
 $(window).on('scroll', function() {
     $('.content').each(function() {
         if (isInViewport(this)) {
@@ -23,6 +19,6 @@ $(window).on('scroll', function() {
     });
 });
 
-// Trigger scroll event on page load
+
 $(window).trigger('scroll');
 });
