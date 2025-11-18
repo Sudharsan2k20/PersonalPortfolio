@@ -7,7 +7,7 @@
   } */
   body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(90deg,#000);
+    background: linear-gradient(90deg,white);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     justify-content: center;
